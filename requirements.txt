@@ -1,0 +1,2 @@
+# No Python dependencies required for the basic static site yet.
+# This file is here for potential future use (e.g., adding a Flask backend). 
