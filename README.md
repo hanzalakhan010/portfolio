@@ -13,4 +13,4 @@ This is a simple static portfolio website built with HTML and CSS.
 
 ## How to View
 
-Simply open the `index.html` file in your web browser. 
+Go to https://hanzalakhan010.github.io/portfolio/
