@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Hanzala Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#6366f1', // Indigo 500
+                            600: '#4f46e5', // Indigo 600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-slate-900 text-slate-300 font-sans antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html"
+                class="text-xl font-bold text-slate-100 font-mono tracking-tighter hover:text-brand-500 transition-colors">
+                <span class="text-brand-500">&lt;</span>HK<span class="text-brand-500">/&gt;</span>
+            </a>
+            <ul class="flex space-x-8 text-sm font-medium">
+                <li><a href="index.html" class="text-slate-400 hover:text-white transition-colors">Home</a></li>
+                <li><a href="projects.html" class="text-brand-500 hover:text-brand-400 transition-colors">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 pt-32 pb-20 flex-grow">
+
+        <header class="mb-16 text-center lg:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-100 mb-4 tracking-tight">Some Things I've Built</h1>
+            <p class="text-brand-500 font-mono text-lg">A collection of web applications and experiments.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex items-center space-x-2 text-slate-500" title="Private Project">
+                        <i class="fas fa-lock text-sm"></i>
+                        <span class="text-xs font-mono font-medium">Private</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
+                    Electronic Voting</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    A secure voting system where admins register students and students cast votes. Prioritizes
+                    authentication and data integrity.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">Flask</span>
+                    <span class="text-brand-500/80">Postgres</span>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex space-x-4 text-slate-400">
+                        <a href="https://github.com/hanzalakhan010/bloggir-server"
+                            class="hover:text-brand-500 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">Bloggir
+                </h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    A full-featured blogging platform with CRUD capabilities, user authentication, and interactive
+                    features like likes and bookmarks.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">JavaScript</span>
+                    <span class="text-brand-500/80">Bootstrap</span>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex space-x-4 text-slate-400">
+                        <a href="https://github.com/hanzalakhan010/school-server"
+                            class="hover:text-brand-500 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">School
+                    App</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    Comprehensive management system for students, teachers, and parents to track homework, classwork,
+                    and academic progress.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">React Native</span>
+                    <span class="text-brand-500/80">FastAPI</span>
+                    <span class="text-brand-500/80">Python</span>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2 text-slate-500" title="Source Code is Private">
+                            <i class="fas fa-lock text-sm"></i>
+                            <span class="text-xs font-mono font-medium">Private</span>
+                        </div>
+                        <a href="#" class="text-slate-400 hover:text-brand-500 transition-colors"
+                            title="Use Application">
+                            <i class="fas fa-external-link-alt text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">Timetable
+                    Generator</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    Algorithm-driven tool that generates conflict-free schedules for teachers and classes, exporting
+                    results to CSV.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">Algorithms</span>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex space-x-4 text-slate-400">
+                        <a href="https://github.com/hanzalakhan010/pnenumonia_detection"
+                            class="hover:text-brand-500 transition-colors"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">Pneumonia
+                    Detection</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    Deep Learning web app using CNNs to analyze chest X-rays and predict pneumonia likelihood with high
+                    accuracy.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">Deep Learning</span>
+                    <span class="text-brand-500/80">CNN</span>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex space-x-4 text-slate-400">
+                        <a href="https://github.com/hanzalakhan010/loan_approval_xai" class="hover:text-brand-500 transition-colors"><i
+                                class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">Loan
+                    Approval AI</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    ML-powered application predicting loan eligibility based on financial details, offering explanations
+                    for rejections.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">Machine Learning</span>
+                    <span class="text-brand-500/80">Sklearn</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 border-t border-slate-800 text-center py-8">
+        <ul class="flex justify-center space-x-6 mb-6">
+            <li><a href="#" class="text-slate-400 hover:text-brand-500 text-xl transition-colors"><i
+                        class="fab fa-github"></i></a></li>
+            <li><a href="#" class="text-slate-400 hover:text-brand-500 text-xl transition-colors"><i
+                        class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p class="text-slate-500 text-sm font-mono mb-2">Designed & Built by Hanzala Khan</p>
+        <p class="text-slate-600 text-xs hover:text-brand-500 transition-colors cursor-pointer">
+            <a href="mailto:hanzalakhan.private@gmail.com">hanzalakhan.private@gmail.com</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

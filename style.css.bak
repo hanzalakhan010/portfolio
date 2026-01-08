@@ -1,0 +1,208 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    /* Center nav items */
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    margin-bottom: 20px;
+    /* Space between nav and title */
+}
+
+header .header-content,
+header h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header .header-content h1 {
+    margin-top: 0;
+}
+
+main {
+    padding: 20px 0;
+    width: 80%;
+    /* Give main content a max width */
+    margin: 20px auto;
+    /* Center main content */
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add subtle shadow */
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+    /* Separator lines */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #35424a;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #35424a;
+}
+
+footer a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+/* Socials Section */
+#socials {
+    text-align: center;
+    /* Center the content */
+}
+
+.social-links {
+    list-style: none;
+    /* Remove default bullets */
+    padding: 0;
+    /* Remove default padding */
+    margin-top: 15px;
+}
+
+.social-links li {
+    display: inline-block;
+    /* Display links side-by-side */
+    margin: 0 15px;
+    /* Add spacing between links */
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 15px;
+    /* Adjust padding for icons */
+    background-color: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    /* font-weight: bold; */
+    /* Not needed for icons */
+    transition: background-color 0.3s ease;
+    /* font-size: 1.5em; */
+    /* Make icons larger */
+    line-height: 1;
+    /* Ensure icon is centered vertically */
+}
+
+.social-links a:hover {
+    background-color: #e8491d;
+    /* Darker color on hover */
+    color: #ffffff;
+}
+
+/* Projects Page Specific */
+#projects-list .project-item {
+    background: #f9f9f9;
+    padding: 20px;
+    /* Increased padding */
+    margin-bottom: 20px;
+    /* Increased margin */
+    border-left: 5px solid #e8491d;
+    border-radius: 4px;
+}
+
+#projects-list h2 {
+    color: #e8491d;
+    margin-bottom: 10px;
+    /* Added margin below h2 */
+}
+
+/* Technology Tags */
+.technologies {
+    margin-bottom: 15px;
+    /* Space below tags */
+}
+
+.technologies span {
+    display: inline-block;
+    /* Allow padding and margin */
+    background-color: #e0e0e0;
+    /* Light grey background */
+    color: #333;
+    /* Dark text */
+    padding: 5px 10px;
+    /* Padding inside tag */
+    margin-right: 5px;
+    /* Space between tags */
+    margin-bottom: 5px;
+    /* Space if tags wrap */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 0.9em;
+    /* Slightly smaller font */
+}
+
+#projects-list .project-item ul {
+    margin-top: 10px;
+    /* Add space above the bullet points */
+}
