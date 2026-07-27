@@ -1,6 +1,6 @@
 # Hanzala Khan - Portfolio
 
-Welcome to my personal portfolio website. This project showcases my work as a **BE Electronics Engineer** working at the intersection of **Electronics** and **Artificial Intelligence**.
+Welcome to my personal portfolio website. This project showcases my work as a **full-stack & backend engineer** and founder of **H++ Solutions**, an EdTech venture.
 
 ## Live Demo
 https://hanzalakhan010.github.io/portfolio/
@@ -9,12 +9,13 @@ https://hanzalakhan010.github.io/portfolio/
 - **Frontend**: HTML5, Tailwind CSS
 - **Icons**: FontAwesome
 - **Fonts**: Inter, JetBrains Mono (Google Fonts)
-- **Deployment**: [e.g., GitHub Pages / Netlify / Vercel]
+- **Deployment**: GitHub Pages
 
 ## Project Structure
-- `index.html`: Main landing page with About, Skills, and Contact sections.
+- `index.html`: Main landing page with About, Experience, Education, and Certifications sections.
 - `projects.html`: A grid layout showcasing my various projects (Private & Public).
 - `image.png`: Profile image.
+- `resume.pdf`: Downloadable resume, linked from the nav.
 
 ## Features
 - **Modern UI**: Dark-themed, developer-focused design using Tailwind CSS.
@@ -36,7 +37,7 @@ open index.html
 
 ## Contact
 - **Email**: [hanzalakhan.private@gmail.com](mailto:hanzalakhan.private@gmail.com)
-- **LinkedIn**: [Hanzala Khan](https://www.linkedin.com/in/hanzala-khan-6a06411b9/)
+- **LinkedIn**: [Hanzala Khan](https://www.linkedin.com/in/hanzala010/)
 - **GitHub**: [hanzalakhan010](https://github.com/hanzalakhan010)
 
 ---

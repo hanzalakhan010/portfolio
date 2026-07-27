@@ -67,6 +67,9 @@
                 <li><a href="index.html" class="text-slate-400 hover:text-white transition-colors">Home</a></li>
                 <li><a href="projects.html" class="text-brand-500 hover:text-brand-400 transition-colors">Projects</a>
                 </li>
+                <li><a href="resume.pdf" download
+                        class="text-slate-400 hover:text-white transition-colors flex items-center"><i
+                            class="fas fa-download mr-1"></i> Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -91,10 +94,11 @@
                     </div>
                 </div>
                 <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
-                    Electronic Voting</h3>
+                    ev++ — Electronic Voting Platform</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
-                    A secure voting system where admins register students and students cast votes. Prioritizes
-                    authentication and data integrity.
+                    A secure e-voting system used three times for Beacon Light Academy's college elections.
+                    Engineered for one-vote-per-student integrity and tamper-proof results, with a flow simple
+                    enough to use without instructions. H++ Solutions' first paying client.
                 </p>
                 <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
                     <span class="text-brand-500/80">Python</span>
@@ -159,21 +163,114 @@
                             <i class="fas fa-lock text-sm"></i>
                             <span class="text-xs font-mono font-medium">Private</span>
                         </div>
-                        <a href="#" class="text-slate-400 hover:text-brand-500 transition-colors"
+                        <a href="https://tg.hplusplus.tech" target="_blank" rel="noopener noreferrer"
+                            class="text-slate-400 hover:text-brand-500 transition-colors"
                             title="Use Application">
                             <i class="fas fa-external-link-alt text-lg"></i>
                         </a>
                     </div>
                 </div>
-                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">Timetable
-                    Generator</h3>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
+                    Automated Timetable Optimization Engine</h3>
                 <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
-                    Algorithm-driven tool that generates conflict-free schedules for teachers and classes, exporting
-                    results to CSV.
+                    An intelligent scheduling system for schools that resolves teacher-availability and resource
+                    constraints into mathematically conflict-free schedules — prioritizes resource-heavy
+                    allocations (labs, library) and fixed blocks, guaranteeing no double-booking.
                 </p>
                 <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
                     <span class="text-brand-500/80">Python</span>
                     <span class="text-brand-500/80">Algorithms</span>
+                </div>
+            </article>
+
+            <!-- Card: db-viewr -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex space-x-4 text-slate-400">
+                        <a href="https://github.com/hanzalakhan010/db-viewr" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-brand-500 transition-colors"><i
+                                class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
+                    db-viewr</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    A lightweight, self-hosted, browser-based database client. Connects to PostgreSQL, MySQL,
+                    SQLite, MongoDB & DynamoDB — browse tables, filter rows, run raw SQL/PartiQL/MongoDB
+                    pipelines, and explore schemas with an interactive SVG-based ERD viewer. One
+                    <code class="text-slate-300">docker compose up</code> to run.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">Flask</span>
+                    <span class="text-brand-500/80">Docker</span>
+                </div>
+            </article>
+
+            <!-- Card: URL Shortener on AWS -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
+                    URL Shortener on AWS</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    A URL shortener API deployed on AWS EC2 with Gunicorn — a deployment-fundamentals project
+                    covering VPC and security group configuration, environment management, and SSL.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Flask</span>
+                    <span class="text-brand-500/80">SQLAlchemy</span>
+                    <span class="text-brand-500/80">PostgreSQL (RDS)</span>
+                    <span class="text-brand-500/80">AWS EC2</span>
+                </div>
+            </article>
+
+            <!-- Card: Phishing Detection -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                    <div class="flex space-x-4 text-slate-400">
+                        <a href="https://www.kaggle.com/code/hanzalakhan/email-spam-detector" target="_blank"
+                            rel="noopener noreferrer" class="hover:text-brand-500 transition-colors"
+                            title="View Notebook">
+                            <i class="fas fa-external-link-alt text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
+                    Phishing Detection — Hybrid AI System</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    A 3-tier email classification system (auto-process / AI-escalate / human review) with
+                    confidence scoring — reported ~85 ROC-AUC and sub-100ms processing in testing.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Python</span>
+                    <span class="text-brand-500/80">Machine Learning</span>
+                    <span class="text-brand-500/80">NLP</span>
+                </div>
+            </article>
+
+            <!-- Card: 30-Day ML & Generative AI Handbook -->
+            <article
+                class="bg-slate-800 rounded-lg p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 border border-slate-700 hover:border-brand-500 group">
+                <div class="flex justify-between items-center mb-6">
+                    <i class="far fa-folder text-4xl text-brand-500 group-hover:text-brand-400 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-100 mb-2 group-hover:text-brand-500 transition-colors">
+                    30-Day ML & Generative AI Handbook</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                    A personal learning roadmap covering Transformers, Diffusion Models, RAG, and optimization
+                    techniques like LoRA.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-500 mt-auto">
+                    <span class="text-brand-500/80">Transformers</span>
+                    <span class="text-brand-500/80">RAG</span>
+                    <span class="text-brand-500/80">LoRA</span>
                 </div>
             </article>
 
@@ -228,9 +325,11 @@
 
     <footer class="bg-slate-900 border-t border-slate-800 text-center py-8">
         <ul class="flex justify-center space-x-6 mb-6">
-            <li><a href="#" class="text-slate-400 hover:text-brand-500 text-xl transition-colors"><i
+            <li><a href="https://github.com/hanzalakhan010"
+                    class="text-slate-400 hover:text-brand-500 text-xl transition-colors"><i
                         class="fab fa-github"></i></a></li>
-            <li><a href="#" class="text-slate-400 hover:text-brand-500 text-xl transition-colors"><i
+            <li><a href="https://www.linkedin.com/in/hanzala010/"
+                    class="text-slate-400 hover:text-brand-500 text-xl transition-colors"><i
                         class="fab fa-linkedin"></i></a></li>
         </ul>
         <p class="text-slate-500 text-sm font-mono mb-2">Designed & Built by Hanzala Khan</p>
